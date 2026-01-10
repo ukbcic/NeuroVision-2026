@@ -31,7 +31,6 @@ This is **not** an introductory workshop — teams should arrive ready to build.
 - [Event Overview](docs/overview.md)
 - [Full Itinerary](docs/itinerary.md)
 - [Judging Criteria](docs/judging.md)
-- [Logistics & Travel](docs/logistics.md)
 - [Hardware Details](docs/hardware.md)
 
 ---
