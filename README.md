@@ -1,4 +1,4 @@
-# UK BCI Consortium Music-BCI Hackathon 2025
+# UK BCI Consortium Music-BCI Hackathon 2026
 ## "Neurovision Music Contest"
 
 The UK BCI Consortium Music-BCI Hackathon brings together researchers, engineers, musicians, and creatives to explore **brain–computer interfaces for musical expression**.
@@ -9,7 +9,7 @@ Selected teams will develop and demonstrate **real-time EEG-controlled musical s
 
 ## Key Dates
 - **Applications Open:** Now
-- **Application Deadline:** December 31
+- **Application Deadline:** January 8
 - **Team Selection:** January 9–10
 - **Hackathon (Day 1):** Friday, January 16 – UCL
 - **Hackathon (Day 2):** Monday, January 19 – Essex
