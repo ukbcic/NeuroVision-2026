@@ -16,8 +16,8 @@ class stream():
 
     def __init__(self, FileHolder):
         self.data = FileHolder.data
-        self.repeat = True
-        self.frequency = 512
+        self.repeat = FileHolder.repeat
+        self.frequency = FileHolder.fs
 
     def create_stream(self):
         info = StreamInfo('EEG Stream', 'EEG', channel_count=self.data.shape[1],
