@@ -3,7 +3,7 @@
 ## Overview
 
 All teams will develop and demonstrate their systems using the **g.tec Unicorn Hybrid Black** EEG headset.  
-Each team will be allocated **one Unicorn system** for the duration of the event.
+Each team will be allocated **one Unicorn system** for the duration of the event (Friday 16th and Monday 19th, the weekend will be without the headset.).
 
 This document defines:
 - Supported hardware
