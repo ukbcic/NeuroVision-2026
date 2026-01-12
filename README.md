@@ -1,5 +1,5 @@
 <!-- Hero Image -->
-<!-- ![Neurovision Music-BCI Hackathon Banner](assets/banner.png) -->
+<!-- ![Neurovision Music-BCI Hackathon Banner](assets/logo.png) -->
 
 # 🎶 UK BCI Consortium Music-BCI Hackathon 2026  
 ## *Neurovision Music Contest*
