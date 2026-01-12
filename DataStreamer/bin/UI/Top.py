@@ -22,41 +22,48 @@ class MainUI(tk.Tk):
         self.title('EEG data streamer')
         #self.geometry('500x150')
 
-        self.quit_button = tk.Button(self, text="Quit", command=sys.exit)
-        self.quit_button.grid(row=3, column=0, sticky=tk.E)
+        self.file = ''
+        button_frame = tk.Frame(self)
+        button_frame.grid(row=3, column=1, sticky='nsew')
 
-        self.start_button = tk.Button(self, text="Start", command=self.start)
-        self.start_button.grid(row=3, column=1, sticky=tk.E)
+        self.quit_button = tk.Button(button_frame, text="Quit", command=sys.exit)
+        self.quit_button.grid(row=0, column=1, sticky=tk.W, padx=5, pady=5)
+
+        self.start_button = tk.Button(button_frame, text="Start", command=self.start)
+        self.start_button.grid(row=0, column=0, sticky=tk.W, padx=5, pady=5)
 
         self.load_file_button = tk.Button(self, text="Select File", command=self.load_file)
-        self.load_file_button.grid(row=0, column=0, sticky=tk.E)
+        self.load_file_button.grid(row=0, column=0, sticky=tk.E, padx=5, pady=5)
 
         self.load_file_button = tk.Label(self, text="")
-        self.load_file_button.grid(row=0, column=1, sticky=tk.E)
+        self.load_file_button.grid(row=0, column=1, sticky=tk.E, padx=5, pady=5)
 
         self.RepeatVar = tk.IntVar()
-        self.checkButton = tk.Checkbutton(self, text = 'Repeat', variable = self.RepeatVar, onvalue = 1, offvalue = 0)
-        self.checkButton.grid(row=1, column=0, sticky=tk.E)
+        self.RepeatCheck = tk.Checkbutton(self, text = 'Repeat', variable = self.RepeatVar, onvalue = 1, offvalue = 0)
+        self.RepeatCheck.grid(row=1, column=0, sticky=tk.E, padx=5, pady=5)
+        self.RepeatCheck.select()
 
-        tk.Label(self, text='Frequency').grid(row=2, column=0, sticky=tk.E)
+        tk.Label(self, text='Frequency').grid(row=2, column=0, sticky=tk.E, padx=5, pady=5)
         self.frequencyInput = tk.Entry(self)
-        self.frequencyInput.grid(row=2, column=1, sticky=tk.E)
+        self.frequencyInput.grid(row=2, column=1, sticky=tk.E, padx=5, pady=5)
         self.frequencyInput.delete(0, tk.END)
         self.frequencyInput.insert(0, '512')
 
 
 
     def start(self):
-        self.file_holder.set_file_path(self.file)
-        self.file_holder.set_repeat(bool(self.RepeatVar.get()))
-        self.file_holder.set_fs(int(self.frequencyInput.get().strip()))
+        if self.file != '':
+            self.file_holder.set_file_path(self.file)
+            self.file_holder.set_repeat(bool(self.RepeatVar.get()))
+            self.file_holder.set_fs(int(self.frequencyInput.get().strip()))
 
-        self.quit()
+            self.quit()
 
 
 
     def load_file(self):
-        self.file = filedialog.askopenfile(mode='r').name
+        self.file = filedialog.askopenfile(mode='r', filetypes=[('CSV','*.csv'),
+                                                                ('BDF','*.bdf')]).name
         self.load_file_button.config(text= self.file)
 
 
