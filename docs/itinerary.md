@@ -3,7 +3,7 @@
 ## Pre-Event Phase
 
 ### Application Period
-**Now – January 8**
+**January 8**
 - Call for participants circulated across consortium channels
 - Application form collects:
   - Team composition
@@ -18,7 +18,7 @@
 - Top teams selected
 - Notifications sent with preparation materials
 
-**January 10–15**
+**Now - January 15**
 - Teams receive:
   - g.tec Unicorn documentation
   - Judging criteria
