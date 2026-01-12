@@ -21,10 +21,14 @@ Technical support available
 18:00-18:30: Progress check-ins (informal)
 18:30: Day 1 wrap-up
 
+---
+
 ### Weekend: January 17-18 - Remote Development
 Teams refine systems independently
 Virtual support channel available
 Prepare presentation materials
+
+---
 
 ### Day 2: Monday, January 19th - Essex Campus
 
