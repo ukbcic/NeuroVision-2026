@@ -27,3 +27,5 @@ class BDFReader:
         self.file_holder.set_data(eeg_data.to_numpy())
 
 
+
+

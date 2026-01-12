@@ -6,6 +6,7 @@ class FileHolder:
     data = None
     repeat = None
     fs = None
+    LSL_stream_name = None
 
     def __init__(self):
         pass
@@ -22,3 +23,6 @@ class FileHolder:
 
     def set_fs(self, fs:int):
         self.fs = fs
+
+    def set_LSL_stream_name(self, LSL_stream_name:str):
+        self.LSL_stream_name = LSL_stream_name

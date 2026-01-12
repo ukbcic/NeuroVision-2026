@@ -15,7 +15,7 @@ class MainUI(tk.Tk):
     RepeatCheck = None
     RepeatVar = None
     frequencyInput = None
-
+    LSL_stream_name_input = None
 
     def __init__(self):
         super().__init__()
@@ -24,7 +24,7 @@ class MainUI(tk.Tk):
 
         self.file = ''
         button_frame = tk.Frame(self)
-        button_frame.grid(row=3, column=1, sticky='nsew')
+        button_frame.grid(row=4, column=1, sticky='nsew')
 
         self.quit_button = tk.Button(button_frame, text="Quit", command=sys.exit)
         self.quit_button.grid(row=0, column=1, sticky=tk.W, padx=5, pady=5)
@@ -49,6 +49,11 @@ class MainUI(tk.Tk):
         self.frequencyInput.delete(0, tk.END)
         self.frequencyInput.insert(0, '512')
 
+        tk.Label(self, text = 'LSL stream name').grid(row=3, column=0, sticky=tk.E, padx=5, pady=5)
+        self.LSL_stream_name_input = tk.Entry(self)
+        self.LSL_stream_name_input.grid(row=3, column=1, sticky=tk.E, padx=5, pady=5)
+        self.LSL_stream_name_input.delete(0, tk.END)
+        self.LSL_stream_name_input.insert(0, "EEG stream")
 
 
     def start(self):
@@ -56,7 +61,7 @@ class MainUI(tk.Tk):
             self.file_holder.set_file_path(self.file)
             self.file_holder.set_repeat(bool(self.RepeatVar.get()))
             self.file_holder.set_fs(int(self.frequencyInput.get().strip()))
-
+            self.file_holder.set_LSL_stream_name(self.LSL_stream_name_input.get().strip())
             self.quit()
 
 

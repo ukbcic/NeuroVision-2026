@@ -11,6 +11,7 @@ class stream():
     data = None
     outlet = None
     frequency = None
+    stream_name = None
 
 
 
@@ -18,9 +19,10 @@ class stream():
         self.data = FileHolder.data
         self.repeat = FileHolder.repeat
         self.frequency = FileHolder.fs
+        self.stream_name = FileHolder.LSL_stream_name
 
     def create_stream(self):
-        info = StreamInfo('EEG Stream', 'EEG', channel_count=self.data.shape[1],
+        info = StreamInfo(self.stream_name, 'EEG', channel_count=self.data.shape[1],
                         channel_format=pylsl.cf_float32, source_id=f'stream_{time.time()}')
 
         self.outlet = StreamOutlet(info)
