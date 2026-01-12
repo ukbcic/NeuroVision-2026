@@ -2,6 +2,7 @@
 ## Main Event Schedule
 
 ### Day 1: Friday, January 16th - UCL Campus
+
 #### Morning Session (10:00-13:00)
 
 10:00-10:30: Registration and welcome coffee
@@ -26,6 +27,7 @@ Virtual support channel available
 Prepare presentation materials
 
 ### Day 2: Monday, January 19th - Essex Campus
+
 #### Morning Session (10:00-13:30)
 10:00-10:30: Arrival and setup
 10:30-13:00: Final testing with hardware
