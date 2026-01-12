@@ -1,13 +1,13 @@
 # Event Overview
 
 ## Concept
-The "Neurovision Music Contest" challenges teams to design **EEG-driven musical performances** using consumer-grade BCI hardware.
+🎶 The "Neurovision Music Contest" challenges teams to design **EEG-driven musical performances** using consumer-grade BCI hardware.
 
 Teams are evaluated on:
-- Stability and robustness of control
-- Musical expressivity
-- Technical and conceptual innovation
-- Overall user experience
+- Stability and robustness of control 🦾
+- Musical expressivity 🎼
+- Technical and conceptual innovation 🧠
+- Overall user experience 😄
 
 ---
 
