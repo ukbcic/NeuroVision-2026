@@ -56,6 +56,11 @@ All teams should assume:
 Introductory reference:
 - MNE-LSL introduction:  
   https://mne.tools/mne-lsl/stable/generated/tutorials/00_introduction.html
+- Python API repo: pylsl 
+  https://github.com/chkothe/pylsl/tree/master
+- Python Package Installation:
+  https://pypi.org/project/pylsl/
+
 
 LSL is widely used in BCI research and is the most robust option for rapid integration under time constraints.
 
