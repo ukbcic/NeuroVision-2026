@@ -37,7 +37,9 @@ Official resources:
   https://github.com/unicorn-bi/Unicorn-Recorder-Hybrid-Black
 - g.tec official setup tutorials (video):  
   https://www.gtec.at/unicorn-hybrid-black-video-tutorials/
-
+- g.tec recorder video setup (video):
+  https://www.youtube.com/watch?v=kYPzWxZBpn4
+  
 Teams should assume **non-ideal signal conditions** and design control strategies accordingly.
 
 ---
